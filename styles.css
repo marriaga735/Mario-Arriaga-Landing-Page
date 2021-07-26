@@ -1,0 +1,297 @@
+body {
+    background-color:rgb(255, 241, 223);
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.btn {
+    background: firebrick;
+    border-radius: 2px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 900;
+    height: 40px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.grid {
+  display: flex;
+}
+
+/* header element */
+header {
+    align-items: center;
+    background-color: firebrick; 
+    display: flex; 
+    justify-content: space-around; 
+    min-height: 75px; 
+    padding: 0px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+    width: 50vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.logo > img {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin-left: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 0 50px;
+    text-align: center;
+    width: 100%;
+    }
+
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35vw;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+/*email subscription*/
+#sub {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#sub > h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#sub input[type='email'] {
+    max-width: 275px;
+    padding: 5px;
+    width: 100%;
+}
+
+#sub input[type='submit'] {
+    border: 0;
+    height: 30px;
+    margin: 15px 0;
+    max-width: 150px;
+    width: 100%;
+}
+
+@media (max-width: 650px) {
+  #sub {
+    margin-top: 120px;
+  }
+}
+
+/*seating section*/
+#seating {
+    margin-top: 30px;
+}
+
+#seating .icon {
+    align-items: center;
+    background:url(https://a.vsstatic.com/banner/event/nfl/san-francisco-49ers.jpg);
+    height: 180px;
+    justify-content: center;
+    width: auto;
+}
+
+@media (max-width: 550px) {
+  #seating .icon {
+    display: none;
+  }
+}
+
+#seating .info {
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    justify-content: center;
+    padding: 5px;
+    width: 80vw;
+}
+
+@media (max-width: 550px) {
+  #seating .info { 
+    height: 150px;
+    padding: 0; 
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  #seating {
+    margin-top: 0;
+  }
+}
+
+/*video element*/
+#video {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#video > iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+/*ticket purchases*/
+#tickets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.ticket {
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+.ticket > .level {
+    background-color: firebrick;
+    color: whitesmoke;
+    font-weight: 700;
+    padding: 15px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.ticket > h2 {
+    margin-top: 15px;
+}
+
+.ticket > ol {
+    margin: 15px 0;
+    padding-inline-start: inherit;
+}
+
+.ticket > ol > li {
+    padding: 5px 0;
+}
+
+.ticket > button {
+    background-color: firebrick;
+    border: 0;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+@media (max-width: 800px) {
+  #tickets {
+    flex-direction: column;
+  }
+  .ticket {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+/* footer element */
+footer {
+    margin-top: 30px;
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+}
+
+footer > ul {
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > ul > li {
+    padding: 0 10px;
+}
+
+footer > span {
+    color: whitesmoke;
+    display: flex;
+    font-size: 0.9em;
+    justify-content: flex-end;
+    margin-top: 5px;
+}

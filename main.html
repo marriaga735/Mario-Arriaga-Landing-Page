@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+
+<link
+  rel="stylesheet" href="styles.css"
+/>
+</head>
+<body>
+
+<div id="page-wrapper">
+
+    <!--header element -->
+  <header id="header">
+    <div class="logo">
+        <!-- header image -->
+      <img
+        id="header-img"
+        src="https://www.lids.com/content/ws/220405/49ER_TLP_MOB.jpg"
+        alt="San Francisco 49ers logo"
+      />
+    </div>
+
+    <!-- nav element -->
+    <nav id="nav-bar">
+        <!-- nav link -->
+      <ul>
+        <li><a class="nav-link" href="#directions">Directions</a></li>
+        <li><a class="nav-link" href="#seats">Seating Map</a></li>
+        <li><a class="nav-link" href="#tickets">Tickets</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <div class="container"></div>
+
+  <section id="sub">
+    <h2 class="mt3">San Francisco 49ers Newsletter</h2>
+    <!-- form element -->
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <!-- input field email placeholder-->
+      <input name="email" id="email" type="email" 
+        placeholder="Enter your email address" required />
+        <!-- submit element -->
+      <input id="submit" type="submit" value="Subscribe" class="btn" />
+    </form>
+  </section>
+
+  <div class="container">
+    <section id="seating">
+        <div class="icon"></div>
+      <div class="grid">
+        <div class="info">
+          <h2>Single Game Tickets</h2>
+          <p>
+            Select from one of this seasons home games. Watch the 49ers live as they take the field.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="info">
+          <h2>Season Tickets</h2>
+          <p>
+            Become a season ticket holder and enjoy all home games from avilable seats
+            remaining for this upcoming season.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="info">
+          <h2>Luxury Suites</h2>
+          <p>
+            Host an event or friends and family in the comfort of your 
+            own luxury suite. Contact guest services for availability. 
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="video">
+        <!-- embeded video -->
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/812Qr9CJHC0" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </section>
+    <section id="tickets">
+      <div class="ticket" id="upperlevel">
+        <div class="level">Upper Level Seating</div>
+        <h2>$85+      
+        </h2>
+        <ol>
+          <li>General seating avilable</li>
+          <li>to the public.</li>
+          <li>Same day purchases.</li>
+          <li>Select from upcoming schedule.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="ticket" id="lowerlevel">
+        <div class="level">Lower Level Seating</div>
+        <h2>$205+</h2>
+        <ol>
+          <li>Season ticket holders.</li>
+          <li>Sign up now.</li>
+          <li>Resale tickets available.</li>
+          <li>Field Level seating.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="ticket" id="suites">
+        <div class="level">Clubhouse Suites</div>
+        <h2>Reserve Now</h2>
+        <ol>
+          <li>Host company events.</li>
+          <li>Suites for large number groups.</li>
+          <li>Full catering available.</li>
+          <li>Click now for available suites.</li>
+          
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <!-- footer element -->
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>© 2021, San Franciso 49ers</span>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
